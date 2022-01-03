@@ -4,16 +4,16 @@
 # auto OS updater
 ####
 
-echo "Checking for Updates"
+echo "\033[01;36mChecking for Updates\033[00;37m"
 apt-get update &&
-echo "Starting Updates"
+echo "\033[01;36mStarting Updates\033[00;37m"
 apt-get -y upgrade &&
-echo "Checking for Distro Upgrades and Installing"
+echo "\033[01;36mChecking for Distro Upgrades and Installing\033[00;37m"
 apt-get -y dist-upgrade &&
-echo "Checking for OS Upgrades and Installing"
+echo "\033[01;36mChecking for OS Upgrades and Installing\033[00;37m"
 # The next two lines are Ubuntu specific
 # apt-get install update-manager-core &&
 # do-release-upgrade &&
-echo "Checking for and Removing Unneeded Programs"
+echo "\033[01;36mChecking for and Removing Unneeded Programs\033[00;37m"
 apt-get -y autoremove && apt-get -y autoclean && apt-get -y clean &&
-echo "Upgrades Finished"
+echo "\033[01;36mUpgrades Finished"
