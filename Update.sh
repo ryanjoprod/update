@@ -16,4 +16,4 @@ echo "\e[01;36mChecking for OS Upgrades and Installing\e[m"
 # do-release-upgrade &&
 echo "\e[01;36mChecking for and Removing Unneeded Programs\e[m"
 apt-get -y autoremove && apt-get -y autoclean && apt-get -y clean &&
-echo "\e[01;36mUpgrades Finished"
+echo "\e[01;36mUpgrades Finished\e[m"
