@@ -9,7 +9,7 @@ apt-get update &&
 echo "\e[01;36mStarting Updates\e[m"
 apt-get -y upgrade &&
 echo "\e[01;36mChecking for Distro Upgrades and Installing\e[m"
-apt-get -y dist-upgrade &&
+apt-get -y full-upgrade &&
 # echo "\e[01;36mChecking for OS Upgrades and Installing\e[m"
 # The next two lines are Ubuntu specific
 # apt-get install update-manager-core &&
